@@ -51,11 +51,11 @@
 
             display-name = "Lower";
             bindings = <
-&kp GRAVE   &kp F1     &kp F2     &kp F3  &kp F4  &kp F5                    &trans          &sys_reset  &trans     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
-&trans      &trans     &trans     &trans  &trans  &trans                    &kp HOME        &kp PG_DN   &kp PG_UP  &kp END           &kp SYSREQ         &trans
-&caps_word  &trans     &trans     &trans  &trans  &trans                    &kp LEFT_ARROW  &kp DOWN    &kp UP     &kp RIGHT         &kp SQT            &trans
-&trans      &kp MINUS  &kp EQUAL  &trans  &trans  &trans  &trans    &trans  &trans          &kp MINUS   &trans     &trans            &kp BACKSLASH      &trans
-                                  &trans  &trans  &trans  &trans    &trans  &trans          &trans      &trans
+&kp GRAVE  &kp F1     &kp F2     &kp F3  &kp F4  &kp F5                    &trans          &sys_reset  &trans     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+&trans     &trans     &trans     &trans  &trans  &trans                    &kp HOME        &kp PG_DN   &kp PG_UP  &kp END           &kp SYSREQ         &trans
+&trans     &trans     &trans     &trans  &trans  &trans                    &kp LEFT_ARROW  &kp DOWN    &kp UP     &kp RIGHT         &kp SQT            &trans
+&trans     &kp MINUS  &kp EQUAL  &trans  &trans  &trans  &trans    &trans  &trans          &kp MINUS   &trans     &trans            &kp BACKSLASH      &trans
+                                 &trans  &trans  &trans  &trans    &trans  &trans          &trans      &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
