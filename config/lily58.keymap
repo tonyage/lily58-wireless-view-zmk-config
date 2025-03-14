@@ -9,6 +9,22 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    behaviors {
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NEW_BEHAVIOR";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT>, <&kp CAPSLOCK>;
+        };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-caps-word";
+            label = "NEW_BEHAVIOR";
+            #binding-cells = <0>;
+            continue-list = <UNDERSCORE>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -22,11 +38,11 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3        &kp N4        &kp N5                          &kp N6  &kp N7         &kp N8     &kp N9   &kp N0    &kp BACKSPACE
-&kp TAB    &kp Q   &kp W   &kp E         &kp R         &kp T                           &kp Y   &kp U          &kp I      &kp O    &kp P     &kp DEL
-&kp LCTRL  &kp A   &kp S   &kp D         &kp F         &kp G                           &kp H   &kp J          &kp K      &kp L    &kp SEMI  &kp RET
-&kp LSHFT  &kp Z   &kp X   &kp C         &kp V         &kp B   &kp LBKT     &kp RBKT   &kp N   &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                           &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &kp SPACE    &kp SPACE  &mo 2   &kp RIGHT_ALT  &kp RGUI
+&kp ESC    &kp N1  &kp N2  &kp N3        &kp N4        &kp N5                                         &kp N6  &kp N7         &kp N8     &kp N9   &kp N0    &kp BACKSPACE
+&kp TAB    &kp Q   &kp W   &kp E         &kp R         &kp T                                          &kp Y   &kp U          &kp I      &kp O    &kp P     &kp DEL
+&kp LCTRL  &kp A   &kp S   &kp D         &kp F         &kp G                                          &kp H   &kp J          &kp K      &kp L    &kp SEMI  &kp RET
+&kp LSHFT  &kp Z   &kp X   &kp C         &kp V         &kp B   &kp LC(LS(LG(NUMBER_4)))    &kp RBKT   &kp N   &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                           &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &kp SPACE                   &kp SPACE  &mo 2   &kp RIGHT_ALT  &kp RGUI
             >;
         };
 
