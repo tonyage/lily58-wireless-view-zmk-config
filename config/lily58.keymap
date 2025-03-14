@@ -10,16 +10,9 @@
 
 / {
     behaviors {
-        new_behavior: new_behavior {
-            compatible = "zmk,behavior-tap-dance";
-            label = "NEW_BEHAVIOR";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp CAPSLOCK>;
-        };
-
-        new_behavior: new_behavior {
+        caps_word: caps_word {
             compatible = "zmk,behavior-caps-word";
-            label = "NEW_BEHAVIOR";
+            label = "CAPS_WORD";
             #binding-cells = <0>;
             continue-list = <UNDERSCORE>;
         };
